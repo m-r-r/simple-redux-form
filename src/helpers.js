@@ -7,7 +7,7 @@ export function getFieldValue(field, formValues) {
   }
   return undefined;
 }
-export function simplifiedVlaues(formValues, fields) {
+export function simplifiedValues(formValues, fields) {
   return fields.reduce((acc, field) => ({
     ...acc,
     [field]: getFieldValue(field, formValues)
